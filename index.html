@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2DOo</title>
+  <link rel="stylesheet" href="assets/main.css">
+  <script src="source/ctrl/initialize.js"></script>
+  <script src="source/model/info.js"></script>
+  <script src="source/view/listTodo.js"></script>
+  <script>
+   window.addEventListener( "load",
+       pl.view.listTodo.setupUserInterface);
+  </script>
+</head>
+<body>
+  <header class="top">
+    <h1>What are you going to do today?</h1>
+  </header>
+  <section>
+    <menu class="main-menu">
+      <li><a href="createInfo.html"><button type="button">
+        NEW TAST
+      </button></a></li>
+      <li><button type="button" onclick="Book.clearData()">
+        RESET ALL
+      </button></li>
+
+    </menu>
+  </section>
+  <section>
+    <table class="layout display responsive-table" id="todos">
+      <thead>
+          <tr>
+              <th>Number</th>
+              <th >Tasks</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+<!--
+          <tr>
+              <td class="organisationnumber">140406</td>
+              <td class="organisationname">Stet clita kasd gubergren, no sea takimata sanctus est</td>
+              <td class="actions">
+                  <a href="?" class="edit-item" title="Edit">Edit</a>
+                  <a href="?" class="remove-item" title="Remove">Remove</a>
+              </td>
+          </tr>
+
+          <tr>
+              <td class="organisationnumber">140412</td>
+              <td class="organisationname">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</td>
+              <td class="actions">
+                  <a href="?" class="edit-item" title="Edit">Edit</a>
+                  <a href="?" class="remove-item" title="Remove">Remove</a>
+              </td>
+          </tr>
+
+          <tr>
+              <td class="organisationnumber">140404</td>
+              <td class="organisationname">Vel illum dolore eu feugiat nulla facilisis at vero eros</td>
+              <td class="actions">
+                  <a href="?" class="edit-item" title="Edit">Edit</a>
+                  <a href="?" class="remove-item" title="Remove">Remove</a>
+              </td>
+          </tr>
+
+          <tr>
+              <td class="organisationnumber">140408</td>
+              <td class="organisationname">Iusto odio dignissim qui blandit praesent luptatum zzril delenit</td>
+              <td class="actions">
+                  <a href="?" class="edit-item" title="Edit">Edit</a>
+                  <a href="?" class="remove-item" title="Remove">Remove</a>
+              </td>
+          </tr>
+
+          <tr>
+              <td class="organisationnumber">140410</td>
+              <td class="organisationname">
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At accusam aliquyam diam
+              </td>
+              <td class="actions">
+                  <a href="?" class="edit-item" title="Edit">Edit</a>
+                  <a href="?" class="remove-item" title="Remove">Remove</a>
+              </td>
+          </tr> -->
+
+      </tbody>
+  </table>
+  </section>
+
+</body>
+</html>
